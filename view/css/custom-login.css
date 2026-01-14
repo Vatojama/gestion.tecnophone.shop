@@ -1,0 +1,53 @@
+/* ====================================================================
+   ESTILOS PERSONALIZADOS - TECNOPHONE
+   Archivo: custom-login.css
+   ==================================================================== */
+
+/* Fondo de pantalla en login */
+body.login-page {
+  background-image: url("ftp://tecnopv@ftp.cluster100.hosting.ovh.net/www/fondo-login.jpg");
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+}
+
+/* Card de login con transparencia */
+.login-box .card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 10px;
+}
+
+/* Header del card */
+.login-box .card-header {
+  background: rgba(0, 123, 255, 0.1) !important;
+  border-bottom: 2px solid rgba(0, 123, 255, 0.3);
+}
+
+/* Botón de login */
+.login-box .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+.login-box .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Inputs */
+.login-box .form-control {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-box .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
